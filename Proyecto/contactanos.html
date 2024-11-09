@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Allerta+Stencil&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  
+    <title>Pintura y dibujo</title>
+    <link rel="stylesheet" href="contactanos.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1 class="title">PINTURA Y DIBUJO</h1>
+        </header>
+
+        <div class="button-container">
+            <button class="btn" onclick="location.href='index.html'">INICIO</button>
+            <button class="btn" onclick="location.href='volumenes.html'">VOLUMENES</button>
+            <button class="btn" onclick="location.href='contactanos.html'">CONTACTANOS</button>
+        </div>
+
+
+        <div class="form-container">
+            <h2>Contactanos a través del siguiente formulario </h2>
+            <form action="#" method="post"> <!-- Cambia el action a la URL donde procesarás el formulario -->
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="apellidos">Apellidos:</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="comentario">Envía tu comentario y/o consulta:</label>
+                    <textarea id="comentario" name="comentario" rows="4" required></textarea>
+                </div>
+        
+                <button type="submit">Enviar</button>
+            </form>
+        </div>

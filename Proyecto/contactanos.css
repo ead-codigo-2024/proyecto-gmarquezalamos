@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho y alto total */
+}
+
+body {
+    margin: 0; 
+    font-family: 'Wittgenstein', sans-serif; 
+    background-color: #FDF4EC; 
+}
+
+.title {
+    color: #0C1DB2;
+    text-align: center;
+    font-size: 4em;
+    margin: 0;
+    margin-top: 40px;
+    
+}
+
+.title {
+    font-size: 3em;
+    margin: 0;
+}
+
+.button-container {
+    display: flex; /* Usa flexbox para alinear los botones en fila */
+    justify-content: center; /* Centra los botones horizontalmente */
+    margin: 4px 4px; /* Margen superior e inferior para separación */
+}
+
+.btn {
+    padding: 10px 20px; /* Espaciado interno para los botones */
+    margin: 0 10px; /* Margen entre los botones */
+    font-size: 16px; /* Tamaño de fuente para los botones */
+    font-family: 'Alef';
+    font-weight: 400;
+    font-style: normal;
+    color: #0C1DB2; /* Color del texto del botón */
+    border: 2px solid #0C1DB2; /* Borde del botón */
+    border-radius: 40px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */ transition: background-color 0.5s ease; /* Transición suave para el color de fondo */
+}
+
+.btn:hover {
+    background-color: #0C1DB2;
+    color: #FDF4EC;
+}
+
+
+.form-container {
+    max-width: 600px; /* Ancho máximo del formulario */
+    margin: auto; /* Centra el formulario en la página */
+    padding: 20px;
+    margin-top: 40px;
+    border: 1px solid #ccc; /* Borde del contenedor */
+    border-radius: 20px; /* Bordes redondeados */
+    background-color: #f9f9f9; /* Color de fondo */
+    font-family: 'Alef'; 
+    color: #0C1DB2; 
+
+}
+
+h2 {
+    text-align: center; /* Centra el título */
+    font-family: 'Wittgenstein', sans-serif; 
+    color: #0C1DB2; 
+}
+
+.form-group {
+    margin-bottom: 15px; /* Espacio entre los grupos de campos */
+}
+
+label {
+    display: block; /* Hace que las etiquetas ocupen toda la línea */
+    margin-bottom: 5px; /* Espacio entre la etiqueta y el campo */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Ancho completo del campo */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde del campo */
+    border-radius: 4px; /* Bordes redondeados */
+}
+
+button {
+    padding: 10px 20px; /* Espaciado interno para los botones */
+    margin: 0 10px; /* Margen entre los botones */
+    font-size: 16px; /* Tamaño de fuente para los botones */
+    font-family: 'Alef';
+    font-weight: 400;
+    font-style: normal;
+    color: #0C1DB2; /* Color del texto del botón */
+    border: 2px solid #0C1DB2; /* Borde del botón */
+    border-radius: 40px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */ transition: background-color 0.5s ease; /* Transición suave para el color de fondo */
+}
+
+button:hover {
+    background-color: #0C1DB2;
+    color: #FDF4EC;
+}
+

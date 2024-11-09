@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Alef:wght@400;700&family=Allerta+Stencil&family=Wittgenstein:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  
+    <title>Pintura y dibujo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            <h1 class="title">PINTURA Y DIBUJO</h1>
+        </header>
+
+        <div class="button-container">
+            <button class="btn" onclick="location.href='index.html'">INICIO</button>
+            <button class="btn" onclick="location.href='volumenes.html'">VOLUMENES</button>
+            <button class="btn" onclick="location.href='contactanos.html'">CONTACTANOS</button>
+        </div>
+  
+        <div class="carousel">
+            <div class="carousel-item active" id="text1">
+                ¡Bienvenido al fascinante mundo del arte!<br><br>
+              Este curso completo de Pintura y Dibujo está diseñado tanto para los principiantes que desean dar sus primeros pasos, como para los artistas experimentados que buscan nuevos trucos y técnicas. <br>Revisa los volúmenes, capítulos, tips e información presentes en la siguiente página web.
+            </div>
+            <div class="carousel-item" id="text2">Un viaje visual y creativo<br><br>
+              Con miles de imágenes prácticas que realmente enseñan, cada tomo de este curso es una puerta abierta a la creatividad. Te ofrecemos una guía exhaustiva sobre materiales, exploramos conceptos innovadores y te presentamos recursos sorprendentes que enriquecerán tu práctica artística.</div>
+          
+            <div class="carousel-item" id="text3">¡Domina todas las técnicas!<br><br>
+              Desde el dibujo a lápiz hasta la pintura al óleo, aquí aprenderás todas las técnicas del arte. Cada volumen incluye lecciones impartidas por maestros reconocidos, la influencia de los grandes clásicos y una variedad de ejercicios prácticos.</div>
+        </div>
+  
+<div class="carousel-buttons" >    
+        <button class="carousel-button" onclick="prevText()">< </button>
+        <button class="carousel-button" onclick="nextText()">></button>
+</div>
+      
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,239 @@
+* {
+    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho y alto total */
+}
+
+body {
+    margin: 0; 
+    font-family: 'Wittgenstein', sans-serif; 
+    background-color: #FDF4EC; 
+}
+
+.container {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Espaciado interno */
+}
+
+.title {
+    color: #0C1DB2;
+    text-align: center;
+    font-size: 4em;
+    margin: 0;
+    margin-top:20px;
+    
+}
+
+.button-container {
+    display: flex; /* Usa flexbox para alinear los botones en fila */
+    justify-content: center; /* Centra los botones horizontalmente */
+    margin: 4px 4px; /* Margen superior e inferior para separación */
+}
+
+.btn {
+    padding: 10px 20px; /* Espaciado interno para los botones */
+    margin: 0 10px; /* Margen entre los botones */
+    font-size: 16px; /* Tamaño de fuente para los botones */
+    font-family: 'Alef';
+    font-weight: 400;
+    font-style: normal;
+    color: #0C1DB2; /* Color del texto del botón */
+    border: 2px solid #0C1DB2; /* Borde del botón */
+    border-radius: 40px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */ transition: background-color 0.5s ease; /* Transición suave para el color de fondo */
+}
+
+.btn:hover {
+    background-color: #0C1DB2;
+    color: #FDF4EC;
+}
+
+.subheader-container {
+    display: flex; /* Activa flexbox en el contenedor */
+    justify-content: space-between; /* Espacia los elementos a los extremos */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+    padding: 20px; /* Espaciado alrededor del contenedor */
+    font-family: 'Wittgenstein', sans-serif; 
+    color:#0C1DB2;
+    font-size: 30px;
+}
+
+
+
+.boton-capitulos {
+    font-family: 'Alef';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    padding: 10px 20px; /* Espaciado interno para los botones */
+    color: #0C1DB2; /* Color del texto del botón */
+    border: 2px solid #0C1DB2; /* Borde del botón */
+    border-radius: 40px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */ 
+    transition: background-color 0.5s ease; /* Transición suave para el color de fondo */
+}
+
+.boton-capitulos:hover {
+    background-color: #0C1DB2;
+    color: #FDF4EC;
+}
+
+
+
+
+.container-superior {
+    display: flex; 
+    align-items: center; 
+    padding: 30px; 
+    flex-wrap: wrap; 
+}
+
+/* Estilos generales para el contenedor */
+.container-izquierda {
+    flex: 1; /* Permite que este contenedor ocupe espacio flexible */
+    max-width: 50%; /* Máximo ancho del contenedor izquierdo en pantallas grandes */
+}
+
+.container-derecha {
+    flex: 1; /* Permite que este contenedor ocupe espacio flexible */
+    max-width: 50%; /* Máximo ancho del contenedor derecho en pantallas grandes */
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .container-superior {
+        flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+        align-items: flex-start; /* Alinea los elementos al inicio (izquierda) */
+    }
+
+    .container-izquierda,
+    .container-derecha {
+        max-width: 100%; /* Ancho completo en pantallas pequeñas */
+        margin-bottom: 20px; /* Espacio entre contenedores en pantallas pequeñas */
+    }
+}
+
+.container-izquierda {
+    display: flex; /* Activa flexbox en el contenedor */
+    justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+    height: 100%; /* Asegura que el contenedor tenga una altura definida si es necesario */
+    max-width: 700px; /* Establece un ancho máximo para el contenedor */
+    width: 100%; /* Permite que el contenedor ocupe el 100% del ancho disponible hasta el máximo */
+    margin: 0 auto; /* Centra el contenedor horizontalmente en su padre */
+}
+
+.container-izquierda img {
+    max-width: 80%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto */
+}
+
+.container-derecha {
+    max-width: 100%; 
+    margin-top: 0; /* Elimina el margen superior para acercar el texto a la imagen */
+    font-family: 'Alef';
+    font-size: 20px;
+    text-align: left;
+    color: #0C1DB2;
+}
+
+
+
+
+.container-central {
+    display: flex; 
+    align-items: center; 
+    padding: 30px; 
+    flex-wrap: wrap; 
+}
+
+* Estilos generales para el contenedor */
+.container-izquierda {
+    flex: 1; /* Permite que este contenedor ocupe espacio flexible */
+    max-width: 50%; /* Máximo ancho del contenedor izquierdo en pantallas grandes */
+}
+
+.container-derecha {
+    flex: 1; /* Permite que este contenedor ocupe espacio flexible */
+    max-width: 50%; /* Máximo ancho del contenedor derecho en pantallas grandes */
+}
+
+/* Media Queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .container-superior {
+        flex-direction: column; /* Cambia a columna en pantallas más pequeñas */
+        align-items: flex-start; /* Alinea los elementos al inicio (izquierda) */
+    }
+
+    .container-izquierda,
+    .container-derecha {
+        max-width: 100%; /* Ancho completo en pantallas pequeñas */
+        margin-bottom: 20px; /* Espacio entre contenedores en pantallas pequeñas */
+    }
+}
+
+.container-izquierda {
+    max-width: 50%; 
+    margin-top: 0; /* Elimina el margen superior para acercar el texto a la imagen */
+    font-family: 'Alef';
+    font-size: 20px;
+    text-align: left;
+    color: #0C1DB2;
+    
+}
+
+.container-derecha img {
+    max-width: 100%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto */
+}
+
+.container-derecha {
+    display: flex; /* Activa flexbox en el contenedor */
+    justify-content: center; /* Centra horizontalmente los elementos dentro del contenedor */
+    align-items: center; /* Centra verticalmente los elementos dentro del contenedor */
+    height: 100%; /* Asegura que el contenedor tenga una altura definida si es necesario */
+    max-width: 700px; /* Establece un ancho máximo para el contenedor */
+    width: 100%; /* Permite que el contenedor ocupe el 100% del ancho disponible hasta el máximo */
+    margin: 0 auto; /* Centra el contenedor horizontalmente en su padre */
+}
+
+
+
+
+
+.container-inferior {
+    display: grid; /* Usa grid para organizar los elementos */
+    grid-template-columns: repeat(3, 1fr); /* Crea tres columnas de igual ancho */
+    gap: 80px; /* Espacio entre los elementos */
+    padding: 20px; /* Espaciado alrededor del contenedor */
+}
+
+.imagen-texto {
+    display: flex; /* Usa flexbox para alinear la imagen y el texto */
+    flex-direction: column; /* Apila la imagen y el texto verticalmente */
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.imagen-texto img {
+    max-width: 50%; /* Asegura que la imagen no exceda el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de aspecto */
+}
+
+.imagen-texto p {
+    text-align: justify;
+    font-family: 'Alef';
+    font-size: 20px;
+    color: #0C1DB2;
+}
+
+/* Media Queries para hacer el diseño responsivo */
+@media (max-width: 1024px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en pantallas más pequeñas (tabletas) */
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Una columna en pantallas más pequeñas (móviles) */
+    }
+}

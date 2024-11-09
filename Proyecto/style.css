@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box; /* Asegura que el padding y el borde se incluyan en el ancho y alto total */
+}
+
+body {
+    margin: 0; 
+    font-family: 'Wittgenstein', sans-serif; 
+    background-color: #FDF4EC; 
+}
+
+.container {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 20px; /* Espaciado interno */
+}
+
+.title {
+    color: #0C1DB2;
+    text-align: center;
+    font-size: 4em;
+    margin: 0;
+    margin-top:20px;
+    
+}
+
+.button-container {
+    display: flex; /* Usa flexbox para alinear los botones en fila */
+    justify-content: center; /* Centra los botones horizontalmente */
+    margin: 4px 4px; /* Margen superior e inferior para separación */
+}
+
+.btn {
+    padding: 10px 20px; /* Espaciado interno para los botones */
+    margin: 0 10px; /* Margen entre los botones */
+    font-size: 16px; /* Tamaño de fuente para los botones */
+    font-family: 'Alef';
+    font-weight: 400;
+    font-style: normal;
+    color: #0C1DB2; /* Color del texto del botón */
+    border: 2px solid #0C1DB2; /* Borde del botón */
+    border-radius: 40px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */ transition: background-color 0.5s ease; /* Transición suave para el color de fondo */
+}
+
+.btn:hover {
+    background-color: #0C1DB2;
+    color: #FDF4EC;
+}
+
+.carousel {
+    position: relative; /* Posiciona elementos hijos relativos a este contenedor */
+    margin-top: 80px; /* Margen superior para separación del contenido anterior */
+  margin-bottom: 80px; /* Margen superior para separación del contenido anterior */
+}
+
+.carousel-item {
+    display: none; /* Oculta todos los elementos del carrusel por defecto */
+}
+
+.carousel-item.active {
+    display: block;/* Muestra solo el elemento activo del carrusel */
+    font-family: 'Alef';
+    color: #0C1DB2;
+    text-align: center;
+}
+
+.carousel-buttons {
+    display: flex; 
+    justify-content: center; 
+}
+
+.carousel-button {
+    padding: 15px 20px; /* Espaciado interno para los botones del carrusel */
+    margin: 0 10px; /* Margen entre los botones */
+    margin-top: 20px; /* Margen superior para separación */
+    background-color: #FDF4EC; 
+    color: #0C1DB2; 
+    border: 2px solid #0C1DB2; /* Borde del botón */
+    border-radius: 40px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  transition: background-color 0.5s ease; /* Transición suave para el color de fondo */
+}
+
+.carousel-button:hover {
+    background-color: #0C1DB2;
+    color: #FDF4EC;
+}
